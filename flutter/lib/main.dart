@@ -53,7 +53,7 @@ Future<void> main(List<String> args) async {
     kWindowId = int.parse(args[1]);
     stateGlobal.setWindowId(kWindowId!);
     if (!isMacOS) {
-      WindowController.fromWindowId(kWindowId!).showTitleBar(false);
+      WindowController.fromWindowId(kWindowId!).showTitleBar(true);
     }
     final argument = args[2].isEmpty
         ? <String, dynamic>{}
